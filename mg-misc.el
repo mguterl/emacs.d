@@ -27,4 +27,7 @@
 ;; Don't prompt for yes or no, prompt for y or n instead
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; Start the server for emacsclient
+(server-start)
+
 (provide 'mg-misc)
