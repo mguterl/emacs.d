@@ -14,7 +14,9 @@
 
 (require 'mg-misc)
 (require 'mg-defuns)
-(require 'mg-keybindings)
 (require 'mg-packages)
 (require 'mg-ruby)
+(require 'mg-javascript)
 (require 'mg-appearance)
+(require 'mg-peepopen)
+(require 'mg-keybindings)
