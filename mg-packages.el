@@ -6,7 +6,7 @@
 (require 'el-get)
 
 (setq el-get-sources
-      '((:name ruby-mode 
+      '((:name ruby-mode
                :type elpa
                :load "ruby-mode.el")
         (:name inf-ruby  :type elpa)
@@ -27,14 +27,24 @@
                :type git
                :url "https://github.com/eschulte/rhtml.git"
                :features rhtml-mode)
-        (:name yaml-mode 
+        (:name yaml-mode
                :type git
                :url "http://github.com/yoshiki/yaml-mode.git"
                :features yaml-mode)))
 
 (setq mg-el-get-packages
       (append
-       '(ruby-mode inf-ruby ruby-compilation css-mode textmate rvm rhtml yaml-mode gist rspec-mode markdown-mode)
+       '(ruby-mode
+         inf-ruby
+         ruby-compilation
+         css-mode
+         textmate
+         rvm
+         rhtml
+         yaml-mode
+         gist
+         rspec-mode
+         markdown-mode)
        (mapcar 'el-get-source-name el-get-sources)))
 
 (el-get 'sync mg-el-get-packages)
