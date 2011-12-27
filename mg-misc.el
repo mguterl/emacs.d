@@ -27,6 +27,9 @@
 ;; Don't prompt for yes or no, prompt for y or n instead
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; cleanup trailing whitespace
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;; Start the server for emacsclient
 (server-start)
 
