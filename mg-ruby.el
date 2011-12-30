@@ -14,4 +14,6 @@
 (add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Vagrantfile$" . ruby-mode))
 
+(add-to-list 'auto-mode-alist '("\\.feature$" . feature-mode))
+
 (provide 'mg-ruby)

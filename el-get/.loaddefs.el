@@ -19,6 +19,17 @@ Key bindings:
 
 ;;;***
 
+;;;### (autoloads (feature-mode) "feature-mode/feature-mode" "feature-mode/feature-mode.el"
+;;;;;;  (20222 5029))
+;;; Generated autoloads from feature-mode/feature-mode.el
+
+(autoload 'feature-mode "feature-mode/feature-mode" "\
+Major mode for editing plain text stories
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (gist-fetch gist-list gist-region-or-buffer-private
 ;;;;;;  gist-region-or-buffer gist-buffer-private gist-buffer gist-region-private
 ;;;;;;  gist-region) "gist/gist" "gist/gist.el" (20214 1832))
@@ -263,7 +274,7 @@ switch the current ruby version to any ruby, which is installed with rvm
 ;;;***
 
 ;;;### (autoloads nil "solarized-theme/solarized-theme" "solarized-theme/solarized-theme.el"
-;;;;;;  (20219 8723))
+;;;;;;  (20222 4911))
 ;;; Generated autoloads from solarized-theme/solarized-theme.el
 
 (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name)))
@@ -291,7 +302,7 @@ TextMate Emulation Minor Mode
 ;;;***
 
 ;;;### (autoloads nil "zenburn-theme/zenburn-theme" "zenburn-theme/zenburn-theme.el"
-;;;;;;  (20219 8860))
+;;;;;;  (20222 4911))
 ;;; Generated autoloads from zenburn-theme/zenburn-theme.el
 
 (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name)))
@@ -299,17 +310,15 @@ TextMate Emulation Minor Mode
 ;;;***
 
 ;;;### (autoloads nil nil ("css-mode/css-mode-autoloads.el" "css-mode/css-mode-pkg.el"
+;;;;;;  "feature-mode/feature-mode-autoloads.el" "feature-mode/feature-mode-pkg.el"
 ;;;;;;  "inf-ruby/inf-ruby-autoloads.el" "inf-ruby/inf-ruby-pkg.el"
 ;;;;;;  "rhtml/rhtml-erb.el" "rhtml/rhtml-fonts.el" "rhtml/rhtml-mode.el"
 ;;;;;;  "rhtml/rhtml-navigation.el" "rhtml/rhtml-ruby-hook.el" "rhtml/rhtml-sgml-hacks.el"
 ;;;;;;  "rspec-mode/rspec-mode-expectations.el" "ruby-compilation/ruby-compilation-autoloads.el"
 ;;;;;;  "ruby-compilation/ruby-compilation-pkg.el" "ruby-electric/ruby-electric-autoloads.el"
 ;;;;;;  "ruby-electric/ruby-electric-pkg.el" "ruby-mode/ruby-mode-autoloads.el"
-;;;;;;  "ruby-mode/ruby-mode-pkg.el" "solarized-theme/solarized-dark-theme.el"
-;;;;;;  "solarized-theme/solarized-light-theme.el" "solarized-theme/solarized-theme-autoloads.el"
-;;;;;;  "solarized-theme/solarized-theme-pkg.el" "yaml-mode/yaml-mode.el"
-;;;;;;  "zenburn-theme/zenburn-theme-autoloads.el" "zenburn-theme/zenburn-theme-pkg.el")
-;;;;;;  (20219 8861 409455))
+;;;;;;  "ruby-mode/ruby-mode-pkg.el" "yaml-mode/yaml-mode.el") (20222
+;;;;;;  5029 450338))
 
 ;;;***
 

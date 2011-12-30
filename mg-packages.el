@@ -19,6 +19,7 @@
                :load "solarized-theme.el"
                :after (lambda() (load-theme 'solarized-light)))
         (:name zenburn-theme :type elpa)
+        (:name feature-mode :type elpa)
         (:name textmate
                :type git
                :url "git://github.com/defunkt/textmate.el"
