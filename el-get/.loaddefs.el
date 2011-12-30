@@ -262,6 +262,14 @@ switch the current ruby version to any ruby, which is installed with rvm
 
 ;;;***
 
+;;;### (autoloads nil "solarized-theme/solarized-theme" "solarized-theme/solarized-theme.el"
+;;;;;;  (20219 8723))
+;;; Generated autoloads from solarized-theme/solarized-theme.el
+
+(add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name)))
+
+;;;***
+
 ;;;### (autoloads (textmate-mode) "textmate/textmate" "textmate/textmate.el"
 ;;;;;;  (20214 1826))
 ;;; Generated autoloads from textmate/textmate.el
@@ -282,6 +290,14 @@ TextMate Emulation Minor Mode
 
 ;;;***
 
+;;;### (autoloads nil "zenburn-theme/zenburn-theme" "zenburn-theme/zenburn-theme.el"
+;;;;;;  (20219 8860))
+;;; Generated autoloads from zenburn-theme/zenburn-theme.el
+
+(add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name)))
+
+;;;***
+
 ;;;### (autoloads nil nil ("css-mode/css-mode-autoloads.el" "css-mode/css-mode-pkg.el"
 ;;;;;;  "inf-ruby/inf-ruby-autoloads.el" "inf-ruby/inf-ruby-pkg.el"
 ;;;;;;  "rhtml/rhtml-erb.el" "rhtml/rhtml-fonts.el" "rhtml/rhtml-mode.el"
@@ -289,8 +305,11 @@ TextMate Emulation Minor Mode
 ;;;;;;  "rspec-mode/rspec-mode-expectations.el" "ruby-compilation/ruby-compilation-autoloads.el"
 ;;;;;;  "ruby-compilation/ruby-compilation-pkg.el" "ruby-electric/ruby-electric-autoloads.el"
 ;;;;;;  "ruby-electric/ruby-electric-pkg.el" "ruby-mode/ruby-mode-autoloads.el"
-;;;;;;  "ruby-mode/ruby-mode-pkg.el" "yaml-mode/yaml-mode.el") (20215
-;;;;;;  12278 821142))
+;;;;;;  "ruby-mode/ruby-mode-pkg.el" "solarized-theme/solarized-dark-theme.el"
+;;;;;;  "solarized-theme/solarized-light-theme.el" "solarized-theme/solarized-theme-autoloads.el"
+;;;;;;  "solarized-theme/solarized-theme-pkg.el" "yaml-mode/yaml-mode.el"
+;;;;;;  "zenburn-theme/zenburn-theme-autoloads.el" "zenburn-theme/zenburn-theme-pkg.el")
+;;;;;;  (20219 8861 409455))
 
 ;;;***
 

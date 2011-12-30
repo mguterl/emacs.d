@@ -7,8 +7,8 @@
 ;; don't display startup
 (setq inhibit-startup-message t)
 
-;; Themes
-(add-to-list 'custom-theme-load-path "~/.emacs.d/vendor/themes/")
-(load-theme 'solarized-light)
+;; display line and column numbers
+(setq line-number-mode    t)
+(setq column-number-mode  t)
 
 (provide 'mg-appearance)

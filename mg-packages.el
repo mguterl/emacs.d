@@ -1,5 +1,6 @@
 (require 'package)
-(setq package-archives (cons '("tromey" . "http://tromey.com/elpa/") package-archives))
+(add-to-list 'package-archives '("tromey" . "http://tromey.com/elpa/"))
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
@@ -13,6 +14,11 @@
         (:name ruby-compilation :type elpa)
         (:name ruby-electric :type elpa)
         (:name css-mode :type elpa)
+        (:name solarized-theme
+               :type elpa
+               :load "solarized-theme.el"
+               :after (lambda() (load-theme 'solarized-light)))
+        (:name zenburn-theme :type elpa)
         (:name textmate
                :type git
                :url "git://github.com/defunkt/textmate.el"
@@ -44,7 +50,9 @@
          yaml-mode
          gist
          rspec-mode
-         markdown-mode)
+         markdown-mode
+         solarized-theme
+         zenburn-theme)
        (mapcar 'el-get-source-name el-get-sources)))
 
 (el-get 'sync mg-el-get-packages)
