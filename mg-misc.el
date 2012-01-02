@@ -33,4 +33,7 @@
 ;; Start the server for emacsclient
 (server-start)
 
+;; Show matching parens
+(show-paren-mode 1)
+
 (provide 'mg-misc)
