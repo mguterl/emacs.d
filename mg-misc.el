@@ -36,4 +36,6 @@
 ;; Show matching parens
 (show-paren-mode 1)
 
+(add-to-list 'auto-mode-alist '(".ya?ml$" . yaml-mode))
+
 (provide 'mg-misc)
