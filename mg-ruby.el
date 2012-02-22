@@ -16,4 +16,8 @@
 
 (add-to-list 'auto-mode-alist '("\\.feature$" . feature-mode))
 
+(setq rspec-use-rake-flag nil)
+(setq rspec-spec-command "rspec")
+(setq rspec-use-bundler-when-possible nil)
+
 (provide 'mg-ruby)
