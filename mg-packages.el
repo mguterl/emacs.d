@@ -49,7 +49,6 @@
          rvm
          rhtml
          yaml-mode
-         gist
          rspec-mode
          markdown-mode
          solarized-theme
