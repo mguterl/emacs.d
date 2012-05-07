@@ -2,3 +2,5 @@
 session*
 auto-save-list/
 *.elc
+el-get/
+elpa/
