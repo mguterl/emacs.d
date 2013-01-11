@@ -3,21 +3,26 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get") (unless (require 'el-get nil t) (url-retrieve "https://raw.github.com/dimitri/el-get/master/el-get-install.el" (lambda (s) (goto-char (point-max)) (eval-print-last-sexp))))
-(require 'el-get)
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
 
 (setq el-get-sources
       '((:name ruby-mode
                :type elpa
                :load "ruby-mode.el")
-        (:name inf-ruby  :type elpa)
         (:name ruby-compilation :type elpa)
         (:name ruby-electric :type elpa)
         (:name css-mode :type elpa)
         (:name solarized-theme
                :type elpa
                :load "solarized-theme.el"
-               :after (lambda() (load-theme 'solarized-light)))
+               :after (progn (load-theme 'solarized-light)))
         (:name zenburn-theme :type elpa)
         (:name feature-mode :type elpa)
         (:name textmate
@@ -29,7 +34,7 @@
                :url "https://github.com/senny/rvm.el.git"
                :load "rvm.el"
                :compile ("rvm.el")
-               :after (lambda() (rvm-use-default)))
+               :after (progn (rvm-use-default)))
         (:name rhtml
                :type git
                :url "https://github.com/eschulte/rhtml.git"
@@ -42,7 +47,6 @@
 (setq mg-el-get-packages
       (append
        '(ruby-mode
-         inf-ruby
          ruby-compilation
          css-mode
          textmate
