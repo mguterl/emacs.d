@@ -18,4 +18,6 @@
 ;; Full screen mode
 (global-set-key (kbd "M-n") 'ns-toggle-fullscreen)
 
+(global-set-key (kbd "C-c g") 'magit-status)
+
 (provide 'mg-keybindings)

@@ -42,7 +42,10 @@
         (:name yaml-mode
                :type git
                :url "http://github.com/yoshiki/yaml-mode.git"
-               :features yaml-mode)))
+               :features yaml-mode)
+        (:name magit
+               :type git
+               :url "git://github.com/magit/magit.git")))
 
 (setq mg-el-get-packages
       (append
