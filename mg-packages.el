@@ -45,7 +45,16 @@
                :features yaml-mode)
         (:name magit
                :type git
-               :url "git://github.com/magit/magit.git")))
+               :url "git://github.com/magit/magit.git")
+        (:name coffee-mode
+               :type git
+               :url "git://github.com/defunkt/coffee-mode.git")
+        (:name haml-mode
+               :type git
+               :url "git://github.com/nex3/haml-mode.git")
+        (:name sass-mode
+               :type git
+               :url "git://github.com/nex3/sass-mode.git")))
 
 (setq mg-el-get-packages
       (append
