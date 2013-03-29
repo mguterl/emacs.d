@@ -26,6 +26,11 @@
         (:name zenburn-theme :type elpa)
         (:name feature-mode :type elpa)
         (:name multi-term :type elpa)
+        (:name ag
+               :type git
+               :url "git://github.com/Wilfred/ag.el.git"
+               :load "ag.el"
+               :compile ("ag.el"))
         (:name textmate
                :type git
                :url "git://github.com/defunkt/textmate.el"
