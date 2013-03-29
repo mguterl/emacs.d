@@ -42,4 +42,8 @@
 (add-to-list 'auto-mode-alist '(".ya?ml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.scss$" . sass-mode))
 
+;; Better names for buffers when there are duplicate filenames
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
+
 (provide 'mg-misc)
