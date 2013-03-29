@@ -25,6 +25,7 @@
                :after (progn (load-theme 'solarized-light)))
         (:name zenburn-theme :type elpa)
         (:name feature-mode :type elpa)
+        (:name multi-term :type elpa)
         (:name textmate
                :type git
                :url "git://github.com/defunkt/textmate.el"
