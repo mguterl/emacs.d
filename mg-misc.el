@@ -46,4 +46,9 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
 
+;; Avoid messages related to ls not supporting the --dired option
+;; ls does not support --dired; see `dired-use-ls-dired' for more details.
+(setq ls-lisp-use-insert-directory-program nil)
+(require 'ls-lisp)
+
 (provide 'mg-misc)
