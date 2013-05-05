@@ -20,10 +20,12 @@
         (:name ruby-electric :type elpa)
         (:name css-mode :type elpa)
         (:name solarized-theme
-               :type elpa
-               :load "solarized-theme.el"
-               :after (progn (load-theme 'solarized-light)))
-        (:name zenburn-theme :type elpa)
+               :type elpa)
+        (:name zenburn-theme
+               :type git
+               :url "git://github.com/bbatsov/zenburn-emacs.git"
+               :load "zenburn-theme.el"
+               after (progn (load-theme 'zenburn t)))
         (:name feature-mode :type elpa)
         (:name multi-term :type elpa)
         (:name ag
