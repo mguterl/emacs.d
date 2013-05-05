@@ -51,4 +51,7 @@
 (setq ls-lisp-use-insert-directory-program nil)
 (require 'ls-lisp)
 
+;; Treat humps in CamelCase words as words.
+(add-hook 'prog-mode-hook 'subword-mode)
+
 (provide 'mg-misc)
