@@ -1,4 +1,4 @@
-(setq js-indent-level 2)
+(setq js-indent-level 4)
 
 (defun json-format ()
   (interactive)
